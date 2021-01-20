@@ -1,0 +1,33 @@
+version: "3.6"
+services:
+  jaeger:
+    image: jaegertracing/all-in-one
+    ports:
+      - 5775:5775/udp
+      - 6831:6831/udp
+      - 6832:6832/udp
+      - 5778:5778
+      - 16686:16686
+      - 14268:14268
+      - 14250:14250
+      - 9411:9411
+
+  opentracing-app-b:
+     build: opentracing-app-b
+     ports:
+      - 8081:8081
+
+  opentracing-app-a:
+     build: opentracing-app-a
+     ports:
+      - 8080:8080
+
+  opentelemetry-app-b:
+     build: opentelemetry-app-b
+     ports:
+      - 9082:9082
+
+  opentelemetry-app-a:
+     build: opentelemetry-app-a
+     ports:
+      - 9081:9081
