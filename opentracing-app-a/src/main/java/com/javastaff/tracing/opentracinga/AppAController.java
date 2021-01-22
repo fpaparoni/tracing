@@ -35,7 +35,7 @@ public class AppAController {
                 .withTag(Tags.SPAN_KIND.getKey(), Tags.SPAN_KIND_SERVER);
  
         Span span = spanBuilder.start();
-        Tags.COMPONENT.set(span, "AppBController");
+        Tags.COMPONENT.set(span, "AppAController");
         span.setTag("testtag", "test");
         span.finish();
     	
