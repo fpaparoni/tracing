@@ -1,5 +1,7 @@
 # Tracing in Spring Boot with OpenTracing/OpenTelemetry
 
+Example projects related to [Tracing in Spring Boot with OpenTracing/OpenTelemetry](https://fpaparoni.medium.com/tracing-in-spring-boot-with-opentracing-opentelemetry-dd724134ca93)  article
+
 To launch the example simply execute build.sh script, then browse to 
 
 
